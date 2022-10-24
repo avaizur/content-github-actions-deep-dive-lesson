@@ -7,10 +7,11 @@ branches:
 jobs:
 build:
 runs-on: ubuntu-latest
+
 steps:
-- name: check out code
-uses: actions/checkout@v2
-- name: set up python
+  - name: check out code
+    uses: actions/checkout@v2
+  - name: set up python
 uses: actions/setup-python@v2
 with:
 python-version: 3.8
